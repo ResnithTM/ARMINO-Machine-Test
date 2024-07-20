@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #feebc8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 800px;
+      
+    }
+  }
+  
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f2d399;
+      padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .main-info {
+      
+      min-width: 250px;
+      
+    }
+  }
+  
+  .temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #dd6b20;
+  }
+  
+  .weather-description {
+    font-size: 1.2rem;
+    color: #dd6b20;
+  }
+  
+  .additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #4a5568;
+    padding: 10px;
+    margin-left: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .additional-info {
+      align-items: flex-start;
+      margin-top: 0;
+    }
+  }
+  
+  .random-text {
+    font-size: 0.8rem;
+    color: #4a5568;
+    margin-top: 20px;
+  }
+  
+  .now-info,
+  .hour-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  
+  .hour-info {
+    margin-top: 5px;
+    font-size: 0.8rem;
+  }
+  
+  .weather-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+  }
+  
+  /* New styles for displaying hourly details in two rows */
+  .hourly-forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Aligns items centrally */
+    gap: 10px; /* Space between items */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background:#f2e7e7;
+  }
+  
+  .hour-info {
+    width: 70px;
+  }
+  
